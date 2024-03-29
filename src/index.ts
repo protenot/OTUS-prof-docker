@@ -20,7 +20,7 @@ if (process.env.NODE_ENV !== "production") {
 
 export const app = express();
 
-const port = 3000;
+const port = 4000;
 const options = {
   definition: {
     openapi: "3.0.0",
