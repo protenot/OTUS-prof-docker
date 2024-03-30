@@ -15,7 +15,7 @@ export const getUser = async (req: Request, res: Response): Promise<void> => {
 
       order: { name: "ASC" },
     });
-
+    console.log("Массив с юзерами",result)
     res.send(result);
   } catch (error) {
     console.error("Error fetching user:", error);
