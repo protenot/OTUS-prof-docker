@@ -19,7 +19,7 @@ services:
 
   app:
     container_name: app-container
-    image: node:18
+    image: app:latest
     build:
       context: .
       dockerfile: Dockerfile
@@ -32,10 +32,10 @@ services:
     environment:
       - NODE_ENV=development
       - PORT=4000
-      - DB_HOST=${DB_DATABASE}
+      - DB_HOST=${DB_HOST}
       - DB_USER=${DB_USERNAME}
       - DB_PASSWORD=${DB_PASSWORD}
-      - DB_NAME=otusdb
+      - DB_NAME=${DB_DATABASE}
       - SESSION_SECRET=${SESSION_SECRET}
 volumes:
   otusdb:
