@@ -14,9 +14,6 @@ import tasksRouter from "./routes/tasks.routes";
 import usersRouter from "./routes/users.routes";
 import commentsRouter from "./routes/comments.routes";
 
-if (process.env.NODE_ENV !== "production") {
-  require("dotenv").config();
-}
 
 export const app = express();
 
@@ -47,6 +44,7 @@ app.use(
 );
 app.use(passport.initialize());
 app.use(passport.session());
+
 app.use(express.urlencoded({ extended: true }));
 
 app.set("view engine", "ejs");

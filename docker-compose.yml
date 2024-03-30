@@ -11,7 +11,7 @@ services:
     environment:
       - POSTGRES_USER=${DB_USERNAME}
       - POSTGRES_PASSWORD=${DB_PASSWORD}
-      - POSTGRES_DB=${DATABASE}
+      - POSTGRES_DB=${DB_DATABASE}
     ports:
       - 5432:5432
     volumes:
@@ -32,7 +32,7 @@ services:
     environment:
       - NODE_ENV=development
       - PORT=4000
-      - DB_HOST=${DATABASE}
+      - DB_HOST=${DB_DATABASE}
       - DB_USER=${DB_USERNAME}
       - DB_PASSWORD=${DB_PASSWORD}
       - DB_NAME=otusdb
