@@ -11,7 +11,7 @@ services:
     environment:
       - POSTGRES_USER=${DB_USERNAME}
       - POSTGRES_PASSWORD=${DB_PASSWORD}
-      - POSTGRES_DB=${DATABASE}
+      - POSTGRES_DB=${DB_DATABASE}
     ports:
       - 5432:5432
     volumes:
@@ -19,7 +19,7 @@ services:
 
   app:
     container_name: app-container
-    image: node:18
+    image: app:latest
     build:
       context: .
       dockerfile: Dockerfile
@@ -32,10 +32,10 @@ services:
     environment:
       - NODE_ENV=development
       - PORT=4000
-      - DB_HOST=${DATABASE}
+      - DB_HOST=${DB_HOST}
       - DB_USER=${DB_USERNAME}
       - DB_PASSWORD=${DB_PASSWORD}
-      - DB_NAME=otusdb
+      - DB_NAME=${DB_DATABASE}
       - SESSION_SECRET=${SESSION_SECRET}
 volumes:
   otusdb:
