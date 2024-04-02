@@ -19,7 +19,7 @@ services:
 
   app:
     container_name: app-container
-    image: app:latest
+    image: node:20
     build:
       context: .
       dockerfile: Dockerfile

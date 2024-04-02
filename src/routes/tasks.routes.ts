@@ -46,7 +46,7 @@ tasksRouter.get("/tasks", getTask);
 
 tasksRouter.get("/tasks/:id", getTaskById);
 /**
-* @swagger
+ * @swagger
  * /tasks:
  *   post:
  *     summary: Post task.

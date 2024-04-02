@@ -1,8 +1,7 @@
 import passport from "passport";
 import { Strategy as LocalStrategy } from "passport-local";
 import bcrypt from "bcrypt";
-import { userEntity } from "../models/user.model"; // Подключите модель пользователя из вашего приложения
-
+import { userEntity } from "../models/user.model";
 declare global {
   // eslint-disable-next-line @typescript-eslint/no-namespace
   namespace Express {

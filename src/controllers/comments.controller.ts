@@ -18,7 +18,7 @@ export const getComments = async (
 
       order: { data: "DESC" },
     });
-    console.log("Массив с комментами",result)
+    console.log("Массив с комментами", result);
     res.send(result);
   } catch (error) {
     console.error("Error fetching comments:", error);

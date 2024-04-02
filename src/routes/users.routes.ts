@@ -6,7 +6,7 @@ import {
   deleteUser,
   updateUser,
 } from "../controllers/users.controllers";
-const usersRouter = express.Router();
+export const usersRouter = express.Router();
 
 /**
  * @swagger
