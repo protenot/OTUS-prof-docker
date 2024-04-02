@@ -1,19 +1,21 @@
-const request = require("supertest");
+import supertest from "supertest";
 //import express from "express";
 import { usersRouter } from "../routes/users.routes";
 import { app } from "../index";
+import { myDataSource } from "../config/dataSource";
 //import {User} from "../models/user.entity"
 //import { userRepository } from "../repositories/users.repository";
 //import { getUser } from "../controllers/users.controllers";
-//beforeAll(async () => {
+beforeAll(async () => {
 // const rrr=await userRepository.find();
 //console.log('rrr', rrr)
 //usersRouter.get("/users", getUser);
-//});
+myDataSource.initialize()
+});
 
 describe("GET /login", () => {
   it("should return layout", async () => {
-    await request(app)
+    await supertest(app)
       .get("/login")
       .expect("Content-Type", "text/html; charset=utf-8")
       .expect(200);
@@ -32,7 +34,7 @@ describe("GET /users", () => {
     //const app = express();
     app.use(usersRouter);
     console.log("+++++");
-    const response = await request(app)
+    const response = await supertest(app)
       .get("/users")
       .expect("Content-Type", /json/)
       .expect(200);
