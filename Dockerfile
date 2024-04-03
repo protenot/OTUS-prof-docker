@@ -8,7 +8,7 @@ RUN yarn install --frozen-lockfile
 
 COPY tsconfig.json ./
 COPY src ./src
-COPY dist/views /app/dist/views
+
 
 RUN yarn run build
 
