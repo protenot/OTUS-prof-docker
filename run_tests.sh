@@ -9,7 +9,10 @@ docker-compose -f docker-compose.yml exec -T app-container wait-for-it -t 0 otus
 
 
 # Запуск тестов (пример с использованием Jest)
-docker-compose -f docker-compose.yml run --rm app yarn run test api.test.js
+docker-compose -f docker-compose.yml run --rm app yarn run test api.test.js --forceExit
+
+
+
 
 # Остановка контейнеров после тестирования
 docker-compose -f docker-compose.yml down
