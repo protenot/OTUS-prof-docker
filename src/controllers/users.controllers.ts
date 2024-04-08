@@ -11,6 +11,7 @@ export const getUser = async (req: Request, res: Response): Promise<void> => {
         name: true,
         email: true,
         role: true,
+        password:true
       },
 
       order: { name: "ASC" },

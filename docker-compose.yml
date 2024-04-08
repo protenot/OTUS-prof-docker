@@ -39,3 +39,6 @@ services:
       - SESSION_SECRET=${SESSION_SECRET}
 volumes:
   otusdb:
+  env-volume:
+    external: true
+
