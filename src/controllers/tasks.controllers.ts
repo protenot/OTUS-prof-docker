@@ -15,7 +15,7 @@ export const getTask = async (req: Request, res: Response): Promise<void> => {
 
       order: { id: "ASC" },
     });
-
+    console.log("Массив с задачами", result);
     res.status(200).send(result);
   } catch (error) {
     console.error("Error fetching tasks:", error);

@@ -1,5 +1,4 @@
 import express from "express";
-//import {initializeDataSource} from "./routes"
 import {
   getUser,
   getUserById,
@@ -7,8 +6,8 @@ import {
   deleteUser,
   updateUser,
 } from "../controllers/users.controllers";
-const usersRouter = express.Router();
-//initializeDataSource();
+export const usersRouter = express.Router();
+
 /**
  * @swagger
  * tags:

@@ -20,7 +20,7 @@ router.get("/", checkAuthenticated, (req, res) => {
 });
 
 router.get("/login", checkNotAuthenticated, (req, res) => {
-  console.log("Flash messages:", req.flash("error"));
+  // console.log("Flash messages:", req.flash("error"));
   res.render("login", { messages: req.flash("error") });
 });
 

@@ -45,8 +45,8 @@ tasksRouter.get("/tasks", getTask);
  */
 
 tasksRouter.get("/tasks/:id", getTaskById);
-
-/* @swagger
+/**
+ * @swagger
  * /tasks:
  *   post:
  *     summary: Post task.
@@ -80,7 +80,7 @@ tasksRouter.delete("/tasks/:id", deleteTask);
  * @swagger
  * /tasks/{id}:
  *   put:
- *     summary: Update user by ID.
+ *     summary: Update task by ID.
  *     tags: [Tasks]
  *     parameters:
  *       - in: path
@@ -91,7 +91,7 @@ tasksRouter.delete("/tasks/:id", deleteTask);
  *           type: string
  *     responses:
  *       '200':
- *         description: A single user.
+ *         description: A single task.
  */
 
 tasksRouter.put("/tasks/:id", updateTask);
