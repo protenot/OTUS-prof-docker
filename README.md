@@ -12,21 +12,12 @@
 <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer">
         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="TypeScript" width="40" height="40" />
 </a>
-<a href="https://nodejs.org/" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" alt="Node.js" width="40" height="40" />
-</a>
 
 <a href="https://babeljs.io/" target="_blank" rel="noreferrer">
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/babel/babel-original.svg" alt="Babel" width="40" height="40" />
 </a>
 
-<a href="http://www.passportjs.org/" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/passport/passport-original.svg" alt="Passport.js" width="40" height="40" />
-</a>
 
-<a href="https://www.npmjs.com/package/bcrypt" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bcrypt/bcrypt-original.svg" alt="bcrypt" width="40" height="40" />
-</a>
 
 <a href="https://expressjs.com/" target="_blank" rel="noreferrer">
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg" alt="Express" width="40" height="40" />
@@ -58,13 +49,13 @@
 
 5. Найдите файл .env.example и переименуйте его в .env;
 
-6. Уберите после знака "=" все символы, которые не являются буквами и цифрами;
+6. В файле уберите после знака "=" все символы, которые не являются буквами и цифрами;
 
-7. Далее введите команду docker-compose build;
+7. Далее введите команду docker-compose build; 
 
-8. Далее введите команду docker-compose up;
+8. Далее введите команду docker-compose up; 
 
-9.Приложение будет доступно по адресу http://localhost:4001/register;
+9. Приложение будет доступно по адресу http://localhost:4001/register;
 
 
 ## Использование
@@ -77,8 +68,8 @@
 
 ## Доступные URL
 
-По адресу http://localhost:4001/api-docs/ можно посмотреть какие REST запросы доступны.
-Так как проект развернут в docker контейнере
+По адресу http://localhost:4001/api-docs/ можно посмотреть какие REST запросы доступны.     
+
 
 http://localhost:4001/users
 
